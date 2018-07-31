@@ -19,7 +19,7 @@ cd ~/GCP-PubSub-and-Cloud-Fucntion-Assessment/
 
 #now we need to deploy the cloud function
 echo "**************DEPLOYING CLOUD FUNCTION***************"
-gcloud beta functions deploy cdm-function --runtime python37 --trigger-topic "cdm-topic" --timeout 540s
+gcloud beta functions deploy hello_pubsub --runtime python37 --trigger-topic "cdm-topic" --timeout 540s
 
 #Now we need to publish message to our pub/sub topic which will trigger our cloud function
 #storing the value of text file in our message variable
